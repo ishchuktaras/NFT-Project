@@ -1,0 +1,23 @@
+body.dark-mode {
+  background-color: #222831;
+  color: #EEEEEE;
+}
+body.dark-mode a {
+  color: #222831;
+}
+body.dark-mode button {
+  background-color: #EEEEEE;
+  color: #222831;
+}
+
+body.light-mode {
+  background-color: #EEEEEE;
+  color: #222831;
+}
+body.light-mode a {
+  color: #222831;
+}
+body.light-mode button {
+  background-color: #222831;
+  color: #EEEEEE;
+}/*# sourceMappingURL=style.css.map */
