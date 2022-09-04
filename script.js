@@ -1,3 +1,5 @@
+// Dark - Light mode
+
 var checkbox = document.querySelector('input[name=mode]');
 
 checkbox.addEventListener('change', function () {
@@ -14,5 +16,5 @@ let trans = () => {
   document.documentElement.classList.add('transition');
   window.setTimeout(() => {
     document.documentElement.classList.remove('transition');
-  }, 1000)
+  }, 300)
 }
