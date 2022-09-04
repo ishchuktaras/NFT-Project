@@ -99,15 +99,34 @@ nav {
   list-style-type: none;
   text-align: center;
 }
-nav li {
-  display: inline;
-  font-size: 20px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #232323;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
-nav a {
+nav li {
   float: left;
-  padding: 10px 2%;
+}
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 20px;
   text-decoration: none;
   color: var(--lightBtn);
+}
+nav li a:hover {
+  background-color: #FFB200;
+  color: #277BC0;
+}
+nav .active {
+  background-color: #277BC0;
+  color: #FFB200;
 }
 
 @media screen and (max-width: 640px) {
