@@ -118,7 +118,7 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #232323;
+    background-color: var(--lightColor);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -148,9 +148,6 @@ nav {
 }
 
 // Mobile screen size
-
-
-
 
 @media screen and (max-width: 640px) {
   #logo {

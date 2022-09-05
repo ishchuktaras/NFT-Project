@@ -104,7 +104,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #232323;
+  background-color: var(--lightColor);
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
