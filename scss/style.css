@@ -93,40 +93,41 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-nav {
-  overflow: hidden;
+.topnav {
   background-color: var(--lightColor);
-  list-style-type: none;
   text-align: center;
 }
-nav ul {
+.topnav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: var(--lightColor);
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
-nav li {
+.topnav li {
   float: left;
 }
-nav li a {
+.topnav li a {
   display: block;
-  text-align: center;
   padding: 14px 16px;
   margin: 0 20px;
   text-decoration: none;
   color: var(--lightBtn);
 }
-nav li a:hover {
+.topnav li a:hover {
   background-color: #FFB200;
   color: #277BC0;
 }
-nav .active {
+.topnav .active {
   background-color: #277BC0;
   color: #FFB200;
+}
+.topnav .sticky {
+  background: var(--lightColor);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+.topnav .sticky + .slideshow-container {
+  padding-top: 60px;
 }
 
 .mySlides {
