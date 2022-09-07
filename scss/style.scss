@@ -181,14 +181,14 @@ img {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: var(--lightBtn);
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+// /* Number text (1/3 etc) */
+// .numbertext {
+//   color: var(--lightBtn);
+//   font-size: 12px;
+//   padding: 8px 12px;
+//   position: absolute;
+//   top: 0;
+// }
 
 /* The dots/bullets/indicators */
 .dot {
@@ -209,6 +209,13 @@ img {
 .fade {
   animation-name: fade;
   animation-duration: 1.8s;
+}
+
+// Footer
+
+footer {
+  background: var(--lightBtn);
+  height: 200px;
 }
 
 @keyframes fade {
