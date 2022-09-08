@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
-/* importing core styling file */
-@import "./fontawesome/scss/fontawesome.scss";
 
-/* font icons link  */
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/brands.scss";
-@import "./fontawesome/scss/sharp-solid.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -185,7 +180,7 @@ footer li a {
   padding: 14px 16px;
   margin: 0 20px;
   text-decoration: none;
-  color: var(--lightColor);
+  color: var(--lightBtn);
 }
 
 @-webkit-keyframes fade {
@@ -216,6 +211,4 @@ footer li a {
     float: none;
     width: 100%;
   }
-}
-
-# sourceMappingURL=style.css.map
+}/*# sourceMappingURL=style.css.map */
