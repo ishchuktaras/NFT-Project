@@ -12,6 +12,11 @@ body {
   color: var(--lightColor);
 }
 
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
 .switch-button {
   font-size: x-small;
   float: right;
@@ -113,11 +118,6 @@ html.transition *:after {
   background-color: var(--lightColor);
   text-align: center;
 
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-  }
-
   li {
     float: left;
   }
@@ -170,26 +170,6 @@ img {
   margin: auto;
 }
 
-/* Caption text */
-.text {
-  color: var(--lightBtn);
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-// /* Number text (1/3 etc) */
-// .numbertext {
-//   color: var(--lightBtn);
-//   font-size: 12px;
-//   padding: 8px 12px;
-//   position: absolute;
-//   top: 0;
-// }
-
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -216,6 +196,14 @@ img {
 footer {
   background: var(--lightBtn);
   height: 200px;
+  
+  li a {
+    display: block;
+    padding: 14px 16px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--lightBtn);
+  }
 }
 
 @keyframes fade {
