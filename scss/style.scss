@@ -16,42 +16,50 @@ $shadowColor4: #ee46b9;
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
 body {
   background: $mainColor;
   font-family: 'Poppins', sans-serif;
   color: $txtColor;
 }
 
-ul {
-  list-style-type: none;
-  overflow: hidden;
-}
-
 #logo {
+  float: left;
   margin: 15px 2%;
   border: $secondaryColor solid 1px;
   border-radius: 30px;
   width: 12%;
-}
-
-#brand {
-  font-size: 4.5em;
-  ;
-  position: absolute;
-  top: 12%;
-  left: 32%;
 
 }
+
+.brand {
+  background: none;
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+
+}
+
+.brand h1 {
+  display: inline-block;
+  line-height: 2;
+  vertical-align: middle;
+ }
 
 
 // Main Nav menu
 
-.nav {
+.topnav {
+  display: block;
   background: $secondaryColor;
   color: $txtColor;
 }
 
-.nav a {
+.topnav a {
   width: 11%;
   float: left;
   padding: 14px 15px;
@@ -61,9 +69,8 @@ ul {
   color: $txtColor;
 }
 
-.nav a:hover {
+.topnav a:hover {
   background: $btnColor;
-  font-size: 1.4em;
   text-shadow:
     0 0 3px $shadowColor1, 0 0 6px $shadowColor4;
 }
@@ -82,17 +89,13 @@ footer {
   height: 230px;
 
   .social-networks {
-    float: right;
-    margin: 20px 100px;
-  }
-
-  h3 {
-    padding: 10px 0;
+    margin: 30px 50px;
+    padding: 30px 0;
   }
 
   a {
     display: block;
-    padding: 10px 16px;
+    padding: 15px 15px;
     text-decoration: none;
     color: $txtColor;
   }
@@ -104,9 +107,9 @@ footer {
 
 }
 
-// Mobile screen size
+/* Extra small devices (phones, 600px and down) */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   #logo {
     display: block;
     width: 150px;
@@ -120,11 +123,29 @@ footer {
 
   .nav a {
     text-align: center;
-    float:right;
+    float: right;
     width: 100%;
   }
-  .nav a:hover {
-    border: 1px solid $txtColor;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #logo {
+    display: block;
+    width: 170px;
+
   }
 
+  .nav>a {
+    float: none;
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

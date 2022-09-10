@@ -4,37 +4,45 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
 body {
   background: #355764;
   font-family: "Poppins", sans-serif;
   color: #c1fbff;
 }
 
-ul {
-  list-style-type: none;
-  overflow: hidden;
-}
-
 #logo {
+  float: left;
   margin: 15px 2%;
   border: #5A8F7B solid 1px;
   border-radius: 30px;
   width: 12%;
 }
 
-#brand {
-  font-size: 4.5em;
-  position: absolute;
-  top: 12%;
-  left: 32%;
+.brand {
+  background: none;
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
 }
 
-.nav {
+.brand h1 {
+  display: inline-block;
+  line-height: 2;
+  vertical-align: middle;
+}
+
+.topnav {
+  display: block;
   background: #5A8F7B;
   color: #c1fbff;
 }
 
-.nav a {
+.topnav a {
   width: 11%;
   float: left;
   padding: 14px 15px;
@@ -44,9 +52,8 @@ ul {
   color: #c1fbff;
 }
 
-.nav a:hover {
+.topnav a:hover {
   background: #495C83;
-  font-size: 1.4em;
   text-shadow: 0 0 3px #2E0249, 0 0 6px #ee46b9;
 }
 
@@ -55,15 +62,12 @@ footer {
   height: 230px;
 }
 footer .social-networks {
-  float: right;
-  margin: 20px 100px;
-}
-footer h3 {
-  padding: 10px 0;
+  margin: 30px 50px;
+  padding: 30px 0;
 }
 footer a {
   display: block;
-  padding: 10px 16px;
+  padding: 15px 15px;
   text-decoration: none;
   color: #c1fbff;
 }
@@ -71,7 +75,8 @@ footer a:hover {
   text-shadow: 0 0 3px #A91079, 0 0 6px #ee46b9;
 }
 
-@media screen and (max-width: 640px) {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
   #logo {
     display: block;
     width: 150px;
@@ -86,7 +91,17 @@ footer a:hover {
     float: right;
     width: 100%;
   }
-  .nav a:hover {
-    border: 1px solid #c1fbff;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #logo {
+    display: block;
+    width: 170px;
   }
-}/*# sourceMappingURL=style.css.map */
+  .nav > a {
+    float: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */
