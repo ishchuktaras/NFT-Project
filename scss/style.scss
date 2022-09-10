@@ -1,3 +1,12 @@
+$mainColor: #355764;
+$secondaryColor: #5A8F7B;
+$btnColor: #FFEA11;
+$txtColor: #81CACF;
+
+$shadowColor1: #2E0249;
+$shadowColor2: #570A57;
+$shadowColor3: #A91079;
+$shadowColor4: #A91079;
 
 
 // Desctop screen size
@@ -8,8 +17,9 @@
 }
 
 body {
+  background: $mainColor;
   font-family: 'Poppins', sans-serif;
-  color: var(--lightColor);
+  color: $txtColor;
 }
 
 ul {
@@ -17,68 +27,50 @@ ul {
   overflow: hidden;
 }
 
-.switch-button {
-  font-size: x-small;
-  float: right;
-  margin: 0 5%;
-}
-
 #logo {
   margin: 15px 2%;
-  border: #277BC0 solid 1px;
+  border: $secondaryColor solid 1px;
   border-radius: 30px;
   width: 12%;
 }
 
 #brand {
+  font-size: 4.5em;;
   position: absolute;
   top: 12%;
-  left: 38%;
+  left: 32%;
 
 }
 
 
 // Main Nav menu
 
-.topnav {
-  background-color: var(--lightColor);
-  text-align: center;
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    padding: 14px 16px;
-    margin: 0 20px;
-    text-decoration: none;
-    color: var(--lightBtn);
-  }
-
-  li a:hover {
-    background-color: #FFB200;
-    color: #277BC0;
-  }
-
-  .active {
-    background-color: #277BC0;
-    color: #FFB200;
-  }
-
-  .sticky {
-    // Fixed navmenu by Javascript
-    background: var(--lightColor);
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky+.slideshow-container {
-    padding-top: 60px;
-  }
+.nav {
+  background: $secondaryColor;
 }
+
+.nav a {
+  width: 11%;
+  float: left;
+  padding: 14px 15px;  
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3em;
+  color: $txtColor;
+}
+
+.nav a:hover {
+  margin: 12px;
+  background: $btnColor;
+  color: $mainColor;
+  box-shadow: 8px 8px 8px 8px $shadowColor1;
+}
+
+.active {
+  background-color: #277BC0;
+  color: #FFB200;
+}
+
 
 // Slideshow
 
@@ -87,7 +79,7 @@ ul {
 // Footer
 
 footer {
-  background: rgba(0, 0, 139, 0.705);
+  background: $secondaryColor;
   height: 230px;
 
   h3 {
@@ -102,24 +94,14 @@ footer {
   }
 
   a:hover {
-    text-shadow: 
-      2px 2px  3px rgba(255, 255, 255, 0.75), 
-      2px 2px  6px rgb(99, 10, 84, 0.7);
+    text-shadow:
+      2px 2px 3px rgba(255, 255, 255, 0.75),
+      2px 2px 6px rgb(99, 10, 84, 0.7);
   }
 
   .social-networks {
     float: right;
     margin: 20px 40px;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
   }
 }
 
@@ -134,9 +116,9 @@ footer {
     display: none;
   }
 
-  .topnav a {
+  .nav a {
     float: none;
     width: 100%;
-  }
 
+  }
 }

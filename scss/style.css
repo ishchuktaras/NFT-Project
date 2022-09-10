@@ -5,8 +5,9 @@
 }
 
 body {
+  background: #355764;
   font-family: "Poppins", sans-serif;
-  color: var(--lightColor);
+  color: #81CACF;
 }
 
 ul {
@@ -14,60 +15,48 @@ ul {
   overflow: hidden;
 }
 
-.switch-button {
-  font-size: x-small;
-  float: right;
-  margin: 0 5%;
-}
-
 #logo {
   margin: 15px 2%;
-  border: #277BC0 solid 1px;
+  border: #5A8F7B solid 1px;
   border-radius: 30px;
   width: 12%;
 }
 
 #brand {
+  font-size: 4.5em;
   position: absolute;
   top: 12%;
-  left: 38%;
+  left: 32%;
 }
 
-.topnav {
-  background-color: var(--lightColor);
-  text-align: center;
+.nav {
+  background: #5A8F7B;
 }
-.topnav li {
+
+.nav a {
+  width: 11%;
   float: left;
-}
-.topnav li a {
-  display: block;
-  padding: 14px 16px;
-  margin: 0 20px;
+  padding: 14px 15px;
   text-decoration: none;
-  color: var(--lightBtn);
+  text-align: center;
+  font-size: 1.3em;
+  color: #81CACF;
 }
-.topnav li a:hover {
-  background-color: #FFB200;
-  color: #277BC0;
+
+.nav a:hover {
+  margin: 12px;
+  background: #FFEA11;
+  color: #355764;
+  box-shadow: 8px 8px 8px 8px #2E0249;
 }
-.topnav .active {
+
+.active {
   background-color: #277BC0;
   color: #FFB200;
 }
-.topnav .sticky {
-  background: var(--lightColor);
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-}
-.topnav .sticky + .slideshow-container {
-  padding-top: 60px;
-}
 
 footer {
-  background: rgba(0, 0, 139, 0.705);
+  background: #5A8F7B;
   height: 230px;
 }
 footer h3 {
@@ -87,23 +76,6 @@ footer .social-networks {
   margin: 20px 40px;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @media screen and (max-width: 640px) {
   #logo {
     width: 25%;
@@ -111,7 +83,7 @@ footer .social-networks {
   #brand {
     display: none;
   }
-  .topnav a {
+  .nav a {
     float: none;
     width: 100%;
   }
