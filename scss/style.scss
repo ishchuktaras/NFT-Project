@@ -18,7 +18,10 @@ $shadowColor4: #ee46b9;
 
 ul {
   list-style-type: none;
-  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -27,49 +30,51 @@ body {
   color: $txtColor;
 }
 
-#logo {
-  float: left;
-  margin: 15px 2%;
-  border: $secondaryColor solid 1px;
-  border-radius: 30px;
-  width: 12%;
+header {
+  height: 220px;
+}
 
+.logo {
+  float: left;
+}
+
+.logo img{
+  border: $secondaryColor solid 1px;
+  border-radius: 25px;
+  width: 12%;
 }
 
 .brand {
-  background: none;
   line-height: 200px;
   height: 200px;
   text-align: center;
-
 }
 
 .brand h1 {
   display: inline-block;
   line-height: 2;
   vertical-align: middle;
- }
-
+}
 
 // Main Nav menu
 
 .topnav {
-  display: block;
   background: $secondaryColor;
   color: $txtColor;
 }
 
 .topnav ul {
   list-style-type: none;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  overflow: hidden;
+ }
+
+.topnav li {
+  float: left;
 }
 
 .topnav a {
-  float: left;
+  display: block;
   padding: 14px 15px;
-  text-decoration: none;
   text-align: center;
   color: $txtColor;
 }
@@ -101,48 +106,54 @@ footer {
   a {
     display: block;
     padding: 15px 15px;
-    text-decoration: none;
     color: $txtColor;
   }
 
   a:hover {
     text-shadow: 0 0 3px $shadowColor3, 0 0 6px $shadowColor4;
   }
-
-
 }
 
 /* Extra small devices (phones, 600px and down) */
 
 @media screen and (max-width: 600px) {
-  #logo {
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+  .logo {
+    width: 100%;
+    text-align: center;
+    height: 220px;
   }
 
-  #brand {
+  #logo {
+    position: relative;
+    top: 20px;
+    width: 30%;
+  }
+
+  .brand {
     display: none;
   }
 
-  .nav a {
-    text-align: center;
-    float: right;
+  .topnav li {
     width: 100%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+  .logo {
+    width: 27%;
+    text-align: center;
+    height: 220px;
+  }
+
   #logo {
-    display: block;
-    width: 170px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+ }
 
-  }
-
-  .nav>a {
-    float: none;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

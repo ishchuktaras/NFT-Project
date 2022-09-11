@@ -6,7 +6,10 @@
 
 ul {
   list-style-type: none;
-  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -15,16 +18,21 @@ body {
   color: #c1fbff;
 }
 
-#logo {
+header {
+  height: 220px;
+}
+
+.logo {
   float: left;
-  margin: 15px 2%;
+}
+
+.logo img {
   border: #5A8F7B solid 1px;
-  border-radius: 30px;
+  border-radius: 25px;
   width: 12%;
 }
 
 .brand {
-  background: none;
   line-height: 200px;
   height: 200px;
   text-align: center;
@@ -37,22 +45,22 @@ body {
 }
 
 .topnav {
-  display: block;
   background: #5A8F7B;
   color: #c1fbff;
 }
 
 .topnav ul {
   list-style-type: none;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  overflow: hidden;
+}
+
+.topnav li {
+  float: left;
 }
 
 .topnav a {
-  float: left;
+  display: block;
   padding: 14px 15px;
-  text-decoration: none;
   text-align: center;
   color: #c1fbff;
 }
@@ -73,7 +81,6 @@ footer .social-networks {
 footer a {
   display: block;
   padding: 15px 15px;
-  text-decoration: none;
   color: #c1fbff;
 }
 footer a:hover {
@@ -82,28 +89,35 @@ footer a:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  #logo {
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+  .logo {
+    width: 100%;
+    text-align: center;
+    height: 220px;
   }
-  #brand {
+  #logo {
+    position: relative;
+    top: 20px;
+    width: 30%;
+  }
+  .brand {
     display: none;
   }
-  .nav a {
-    text-align: center;
-    float: right;
+  .topnav li {
     width: 100%;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  #logo {
-    display: block;
-    width: 170px;
+  .logo {
+    width: 27%;
+    text-align: center;
+    height: 220px;
   }
-  .nav > a {
-    float: none;
+  #logo {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100%;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
